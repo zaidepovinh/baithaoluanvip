@@ -1,0 +1,255 @@
+/* CSS cho trang giới thiệu */
+:root {
+    --primary-color: #ff8ba7;
+    --secondary-color: #ffc6c7;
+    --text-color: #33272a;
+    --light-text: #594a4e;
+    --background: #fffffe;
+    --button-text: #fff;
+    --light-bg: #faeee7;
+    --border-color: #e0e0e0;
+}
+
+.about-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background);
+}
+
+/* Sidebar */
+.about-sidebar {
+    width: 280px;
+    padding-right: 20px;
+}
+
+.policy-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policy-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.policy-item a {
+    display: block;
+    padding: 15px;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.policy-item:hover a {
+    background-color: rgba(255, 139, 167, 0.1);
+    color: var(--primary-color);
+}
+
+.policy-item.active a {
+    background-color: var(--primary-color);
+    color: var(--button-text);
+}
+
+/* Content */
+.about-content {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--background);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.policy-section {
+    display: none;
+}
+
+.policy-section.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.policy-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.policy-header::before,
+.policy-header::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 1px;
+    background-color: var(--primary-color);
+}
+
+.policy-header::before {
+    left: calc(50% - 50px);
+}
+
+.policy-header::after {
+    right: calc(50% - 50px);
+}
+
+.policy-title {
+    font-size: 28px;
+    color: var(--text-color);
+    margin: 0;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.policy-title::before,
+.policy-title::after {
+    content: '—';
+    position: relative;
+    color: var(--primary-color);
+    padding: 0 10px;
+}
+
+.policy-body {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--light-text);
+}
+
+.policy-body p {
+    margin-bottom: 15px;
+}
+
+.policy-body strong {
+    color: var(--text-color);
+}
+
+/* Collapsible sections */
+.collapsible-section {
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.collapsible-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: var(--light-bg);
+    transition: background-color 0.3s;
+}
+
+.collapsible-header:hover {
+    background-color: rgba(255, 139, 167, 0.1);
+}
+
+.collapsible-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.toggle-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: transform 0.3s;
+}
+
+.collapsible-section.active .toggle-icon {
+    transform: rotate(45deg);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+}
+
+.collapsible-section.active .collapsible-content {
+    max-height: 1000px; /* Đủ lớn để hiển thị nội dung */
+    padding: 15px;
+}
+
+.collapsible-content ul,
+.collapsible-content ol {
+    padding-left: 20px;
+}
+
+.collapsible-content ul li,
+.collapsible-content ol li {
+    margin-bottom: 5px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+    }
+    
+    .about-sidebar {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .policy-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .policy-item {
+        flex: 1;
+        min-width: 200px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .policy-nav {
+        flex-direction: column;
+    }
+    
+    .policy-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .policy-header {
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .policy-title {
+        font-size: 24px;
+    }
+    
+    .policy-title::before,
+    .policy-title::after {
+        display: none;
+    }
+}

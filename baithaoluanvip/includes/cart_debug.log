@@ -1,0 +1,252 @@
+2025-04-17 16:29:37 - Request received: Array
+(
+    [product_id] => 9
+    [quantity] => 1
+)
+
+2025-04-17 16:29:37 - Request received: Array
+(
+    [product_id] => 9
+    [quantity] => 1
+)
+
+2025-04-17 16:29:37 - Request received: Array
+(
+    [product_id] => 9
+)
+
+2025-04-17 16:29:54 - Request received: Array
+(
+    [product_id] => 7
+    [quantity] => 1
+)
+
+2025-04-17 16:29:54 - Request received: Array
+(
+    [product_id] => 7
+)
+
+2025-04-17 16:29:54 - Request received: Array
+(
+    [product_id] => 7
+    [quantity] => 1
+)
+
+2025-04-17 16:30:52 - Request received: Array
+(
+    [product_id] => 8
+    [quantity] => 1
+)
+
+2025-04-17 16:30:52 - Request received: Array
+(
+    [product_id] => 8
+)
+
+2025-04-17 16:39:57 - Request received: Array
+(
+    [product_id] => 4
+    [quantity] => 1
+)
+
+2025-04-17 16:39:57 - Request received: Array
+(
+    [product_id] => 4
+)
+
+2025-04-17 16:39:57 - Request received: Array
+(
+    [product_id] => 4
+    [quantity] => 1
+)
+
+2025-04-17 16:40:48 - Request received: Array
+(
+    [product_id] => 9
+    [quantity] => 1
+)
+
+2025-04-17 16:40:48 - Request received: Array
+(
+    [product_id] => 9
+)
+
+2025-04-17 16:40:48 - Request received: Array
+(
+    [product_id] => 9
+    [quantity] => 1
+)
+
+2025-04-17 16:48:01 - Request received: Array
+(
+    [product_id] => 8
+    [quantity] => 1
+)
+
+2025-04-17 21:48:01 - Request received: product_id=8, quantity=not set
+2025-04-17 21:48:01 - Request received: product_id=8, quantity=1
+2025-04-17 21:48:01 - Request received: product_id=8, quantity=1
+2025-04-17 22:00:32 - Request received: Array
+(
+    [product_id] => 8
+    [quantity] => 1
+)
+
+2025-04-17 22:00:32 - Parsed values: product_id=8, quantity=1
+2025-04-17 22:00:32 - Session cart updated: Array
+(
+    [0] => Array
+        (
+            [product_id] => 8
+            [quantity] => 4
+        )
+
+)
+
+2025-04-17 22:00:32 - Request received: Array
+(
+    [product_id] => 8
+)
+
+2025-04-17 22:00:32 - Parsed values: product_id=8, quantity=1
+2025-04-17 22:00:32 - Session cart updated: Array
+(
+    [0] => Array
+        (
+            [product_id] => 8
+            [quantity] => 5
+        )
+
+)
+
+2025-04-17 22:00:32 - Request received: Array
+(
+    [product_id] => 8
+    [quantity] => 1
+)
+
+2025-04-17 22:00:32 - Parsed values: product_id=8, quantity=1
+2025-04-17 22:00:32 - Session cart updated: Array
+(
+    [0] => Array
+        (
+            [product_id] => 8
+            [quantity] => 6
+        )
+
+)
+
+2025-04-17 22:00:56 - Request received: Array
+(
+    [product_id] => 7
+    [quantity] => 1
+)
+
+2025-04-17 22:00:56 - Parsed values: product_id=7, quantity=1
+2025-04-17 22:00:56 - Session cart updated: Array
+(
+    [0] => Array
+        (
+            [product_id] => 8
+            [quantity] => 6
+        )
+
+    [1] => Array
+        (
+            [product_id] => 7
+            [quantity] => 1
+        )
+
+)
+
+2025-04-17 22:00:56 - Request received: Array
+(
+    [product_id] => 7
+)
+
+2025-04-17 22:00:56 - Parsed values: product_id=7, quantity=1
+2025-04-17 22:00:56 - Session cart updated: Array
+(
+    [0] => Array
+        (
+            [product_id] => 8
+            [quantity] => 6
+        )
+
+    [1] => Array
+        (
+            [product_id] => 7
+            [quantity] => 2
+        )
+
+)
+
+2025-04-17 22:00:56 - Request received: Array
+(
+    [product_id] => 7
+    [quantity] => 1
+)
+
+2025-04-17 22:00:56 - Parsed values: product_id=7, quantity=1
+2025-04-17 22:00:56 - Session cart updated: Array
+(
+    [0] => Array
+        (
+            [product_id] => 8
+            [quantity] => 6
+        )
+
+    [1] => Array
+        (
+            [product_id] => 7
+            [quantity] => 3
+        )
+
+)
+
+2025-04-17 17:04:48 - Request received: Array
+(
+    [product_id] => 5
+    [quantity] => 1
+)
+
+2025-04-17 17:04:48 - Request received: Array
+(
+    [product_id] => 5
+    [quantity] => 1
+)
+
+2025-04-17 17:04:48 - Request received: Array
+(
+    [product_id] => 5
+)
+
+2025-04-17 22:04:48 - Request received: product_id=5, quantity=1
+2025-04-17 22:04:48 - Request received: product_id=5, quantity=1
+2025-04-17 22:04:48 - Request received: product_id=5, quantity=not set
+2025-04-17 17:14:17 - Request received: Array
+(
+    [product_id] => 8
+    [quantity] => 1
+)
+
+2025-04-17 22:14:17 - Request received: product_id=8, quantity=1
+2025-04-17 22:14:17 - Request received: product_id=8, quantity=1
+2025-04-17 22:14:17 - Request received: product_id=8, quantity=not set
+2025-04-17 17:30:49 - Request received: Array
+(
+    [product_id] => 1
+)
+
+[quantity] => 1
+)
+
+2025-04-17 17:30:49 - Request received: Array
+(
+    [product_id] => 1
+    [quantity] => 1
+)
+
+2025-04-17 22:30:49 - Request received: product_id=1, quantity=1
+2025-04-17 22:30:49 - Request received: product_id=1, quantity=not set
+2025-04-17 22:30:49 - Request received: product_id=1, quantity=1
